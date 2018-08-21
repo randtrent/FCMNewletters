@@ -1,0 +1,412 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>FCM-Newsletter</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+    width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+table table table {
+    table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+    border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+}
+</style>
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+        .dropTOP {
+            transform: translateY(-100px);
+        }
+
+        .dropPadding {
+            padding: 0px 14%;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                /* display: block !important; */
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+            .dropPadding {
+
+                padding: 0;
+            }
+        }
+    </style>
+    </head>
+    <body bgcolor="#ffffff" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table bgcolor="#e0e0e0" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td><center style="width: 100%;">
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+            <!-- Visually Hidden Preheader Text : END -->
+            <!-- Email Header : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <tr>
+              <td style="padding: 40px 0; text-align: center">
+                  <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/6e65227a-a713-4a5a-97ef-014c570d8855.png?ver=1532373010000"   alt="alt_text" border="0">
+              </td>
+              <td style="padding-top: 20px; padding-left: 20px; padding-right: 20px; padding-bottom: 0px; text-align: right; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                  <a href="https://facebook.com/fullcontactmarketingcanada" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/d1b7a300-e1d2-41e5-b5f3-ba1d0bccb516.png?ver=1532373010000" width="24px" height="24px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                  <a href="https://www.instagram.com/fullcontact_fcm/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/1f395ba2-8798-4afb-a5e0-384d86daf972.png?ver=1532373010000" width="24px" height="24px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                  <a href="https://www.linkedin.com/company/full-contact-marketing/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/408a7112-8e01-47de-b1e0-c9c5e9216f66.png?ver=1532373010000" width="24px" height="24px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                  <p style="	color: #505050;	font-family: sans-serif;	font-size: 14px;	font-weight: 300;	line-height: 17px;">1.800.728.6651</p>
+              </td>
+            </tr>
+            </table>
+            <!-- Email Header : END -->
+            <!-- Email Upper Body : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <!-- Hero Image, Flush : BEGIN -->
+              <tr>
+                <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/8add0c0e-8eca-49f6-baba-1a0d02b53529.png?ver=1532373009000" bgcolor="#222222" style="padding-top: 40px; padding-bottom: 40px; text-align: center; background-position: center center !important; background-size: cover !important;" class="stack-column-center">
+                  <p>
+                    <a href="https://www.fullcontactmarketing.ca/do-you-really-need-seo/" target="_blank" style="color: #FFFFFF;  font-family: sans-serif;    font-size: 34px;    font-weight: 600;   line-height: 41px;  text-align: center; text-decoration: none;">
+                      Are You Ready For <br>
+                      Facebook Ads?
+                    </a>
+                  </p>
+                </td>
+              </tr>
+            <!-- Hero Image, Flush : END -->
+            <!-- 1 Column Text : BEGIN -->
+            <tr>
+                <td style="padding-left: 14%; padding-right: 14%; padding-top: 0px; padding-bottom: 16px;" class="stack-column-center">
+                  <p style="color: #454545; font-family: sans-serif;    font-size: 14px;    font-weight: 300;   line-height: 17px;  text-align: center;">
+                    <br>
+                    Your social media feed: it's the medium of the moment. We <b>know</b> this is where our audience hangs out, so let's jump in and start the conversation.
+                    <br>
+                    <br>
+                    PPC campaigns are the marketing method of choice; with their <b>budget flexibility, customized targeting</b> and <b>cultural relevance</b> there's a wide audience out there for you to find.
+                    <br>
+                    <br>
+                    With the right tools, it's easy to get started:
+                  </p>
+
+          </td>
+        </tr>
+      </table>
+
+      <!-- Triple Column : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td style="padding: 3%; text-align: center;">
+              <!-- <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/ba2acd06-b879-498b-bf31-7903af1684f7.png?ver=1534813298000" width="50%" alt="alt_text" border="0"> -->
+              <p style="	color: #454545;	font-family: sans-serif;	font-size: 0.7em;	font-weight: bold;	letter-spacing: 3.3px;	line-height: 19px;	text-align: center; text-decoration: none !important;">
+                DO YOU HAVE AN <br> UPDATED AND <br> MOBILE-READY <br> WEBSITE?
+              </p>
+            </td>
+          <td style="padding: 6%; text-align: center;">
+              <!-- <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/6632ad38-71db-4b14-863b-fb42cf3922ec.png?ver=1534813298000" width="80%" alt="alt_text" border="0"> -->
+              <p style="	color: #454545;	font-family: sans-serif;	font-size: 0.7em;	font-weight: bold;	letter-spacing: 3.3px;	line-height: 19px;	text-align: center; text-decoration: none !important;">
+                DO YOU HAVE AN <br> ACTIVE <br> FACEBOOK <br> PAGE?
+              </p>
+          </td>
+          <td style="padding: 3%; text-align: center;">
+              <!-- <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/0ea45481-9561-4412-840d-797b40da022e.png?ver=1534813298000" width="50%  " alt="alt_text" border="0"> -->
+              <p style="	color: #454545;	font-family: sans-serif;	font-size: 0.7em;	font-weight: bold;	letter-spacing: 3.3px;	line-height: 19px;	text-align: center; text-decoration: none !important;">
+                DO YOU KNOW <br> YOUR <br> TARGET <br> AUDIENCE?
+              </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+
+          </td>
+        </tr>
+      </table>
+      <!-- Triple Column : END -->
+
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td>
+            <!-- Button : Begin -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+              <tr>
+                <td style="height: 35px; width: 142px; background-color: #E76009; text-align: center; text-decoration:none;">
+                  <a href="http://www.fullcontactmarketing.ca/are-you-ready-for-facebook-ads/" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 17px;    font-weight: 300;   letter-spacing: 1.4px;  line-height: 42px;  text-align: center;  text-decoration: none;">
+                    <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->READ MORE<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Button : END -->
+          </td>
+        </tr>
+      </table>
+
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td style="padding: 20px; text-align: center">
+            <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/2331b2c7-79ab-4bb0-b537-19d5671453de.png?ver=1532373010000" width="80%" alt="alt_text" border="0">
+                      <p style="color: #3E3E3E; font-family: sans-serif;    font-size: 19px;    font-weight: 600;   line-height: 23px; text-align: center;">
+                        <b> LET'S GET YOU STARTED </b> <br>
+                        WITH A SPECIAL OFFER
+                      </p>
+                  </td>
+                  <td style="padding: 5%; text-align: left; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
+                    First impressions make all the difference - so we want yours to be simple and positive.
+                    Sign on with us for a three month Facebook Ad Campaign, and <b>we will waive your first month of management fees.</b>*
+                </td>
+            </tr>
+      </table>
+
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td>
+            <!-- Button : Begin -->
+            <table cellspacing="0" cellpadding="5" border="0" align="center" style="margin: auto">
+              <tr>
+                <td style="height: 42px; width: 212px; background-color: #E76009; text-align: center; text-decoration:none;">
+                  <a href="http://www.fullcontactmarketing.ca/are-you-ready-for-facebook-ads/" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 17px;    font-weight: 300;   letter-spacing: 1.4px;  line-height: 42px;  text-align: center;  text-decoration: none;">
+                    <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->REQUEST A QUOTE<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Button : END -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+              <tr>
+                <td style="padding-bottom: 4%; font-size: 0.65em; font-family: sans-serif">
+                  *Discount does not apply to the Ad Budget.
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Header & Columns : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/a17b445a-f381-4dc1-9e84-30f943ccb165.png?ver=1532373009000" bgcolor="#222222" valign="middle" style="padding-top: 20px; padding-bottom: 20px; padding-left: 14%; padding-right: 14%; text-align: center; background-position: center center !important; background-size: cover !important;">
+            <p>
+              <a href="https://www.fullcontactmarketing.ca" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 36px;    font-weight: 600;   line-height: 49px;  text-align: center; text-decoration: none;">
+                FCM is <br> DIFFERENT
+              </a>
+            </p>
+            <p style="color: #FFFFFF;   font-family: sans-serif;    font-size: 16px;    font-weight: 600;   line-height: 15px;  text-align: center;">
+              Full Contact Marketing offers exclusive and highly effective services to its dental partners by using a strategic combination of
+            </p>
+          </td>
+          <!-- Double Columns : BEGIN -->
+          <tr>
+              <td align="center" valign="top" class="dropPadding">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                  <td bgcolor="#FFDEC8" valign="top" class="stack-column-center"><table cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                      <td style="padding-top: 10px; padding-left: 20px; text-align: left"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/596dfea3-d8c1-4dea-ab78-53abfbe63ba1.png?ver=1532373009000" width="53" height="53" alt="alt_text" border="0" class="fluid"></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0px 20px; color: #484F59; font-family: sans-serif;    font-size: 14px;    font-weight: 600;   line-height: 28px;  text-align: left;">
+                        LOCAL SEO
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-bottom: 10px; padding-left: 20px; padding-right: 10px; color: #454545; font-family: sans-serif;    font-size: 13px;    font-weight: 300;   line-height: 16px; text-align: left;">
+                        We now offer an enhanced package for search engine optimization that includes 1 blog post per month
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td bgcolor="#FAD6BF" valign="top" class="stack-column-center">
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-top: 10px; padding-left: 20px; text-align: left"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/54356d3f-817a-4a96-9d7a-08ad914accfc.png?ver=1532373009000" width="53" height="53" alt="alt_text" border="0" class="fluid"></td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0px 20px; color: #484F59; font-family: sans-serif;    font-size: 14px;    font-weight: 600;   line-height: 28px;  text-align: left;">
+                         PAY PER CLICK AD CAMPAIGN
+                       </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-bottom: 10px; padding-left: 20px; padding-right: 10px; color: #454545; font-family: sans-serif;    font-size: 13px;    font-weight: 300;   line-height: 16px; text-align: left;">
+                        If you are looking to increase traffic quickly, ask us about our Facebook Ad and Google Adword campaigns. We manage the campaign - you take the calls!
+                       </td>
+                    </tr>
+                  </table>
+                </td>
+                </tr>
+                </table>
+                <!-- Double Columns : END -->
+                <br>
+                <!-- Button : BEGIN -->
+                <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto; padding-top: 48px;">
+                  <tr>
+                    <td style="height: 35px; width: 135px; padding: 4px; border-radius: 23px; background-color: #E76009; text-align: center;">
+                      <a href="tel:1-800-728-6651" style=" color: #FFFFFF; font-family: sans-serif;    font-size: 16px;    font-weight: 300;   line-height: 28px; text-align: center; text-decoration: none;">
+                        <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->CONTACT US<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                      </a></td>
+                  </tr>
+                 </table>
+                <!-- Button : END -->
+              </td>
+            </tr>
+      </table>
+      <!-- Header & Columns : END -->
+      <!-- Final Body : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <tr>
+        <td style="text-align: center; padding-top: 20px; padding-bottom: 32px;">
+          <p style="color: #3E3E3E; font-family: sans-serif;    font-size: 26px;    font-weight: 600;   letter-spacing: 2.1px;  line-height: 31px; text-align: center;">
+            OUR FOCUS
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <!-- Image : BEGIN -->
+        <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/644a9943-8520-486c-8e21-346be51fcf34.png?ver=1532373011000" bgcolor="#ffffff" valign="middle" style="padding-top: 53px; padding-bottom: 53px; text-align: center; background-position: center center !important; background-size: cover !important;">
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; padding: 16px 14%;">
+          <p style="color: #454545; font-family: sans-serif;    font-size: 16px;    font-weight: 300;   line-height: 19px;  text-align: center;">
+            Full Contact Marketing takes the lead to create marketing plans that addresses the unique needs of your business.  Unlike other marketing services, we implement that strategy on your behalf with confidence and ease.
+          </p>
+          <p style="color: #454545; font-family: sans-serif;    font-size: 16px;    font-weight: 300;   line-height: 19px;  text-align: center;">
+            Marketing is what we do best; our expertise in the dental industry is an added bonus!
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; padding: 0px 16%;">
+          <p style="color: #3E3E3E; font-family: sans-serif;    font-size: 26px; letter-spacing: 2.1px; font-weight: 600;   line-height: 31px; text-align: center;">
+            WE'LL PLAN THE WORK <br> AND WORK THE PLAN!
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <!-- Hero Image, Flush : BEGIN -->
+        <tr>
+          <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/8add0c0e-8eca-49f6-baba-1a0d02b53529.png?ver=1532373009000" bgcolor="#222222" style="width: 100%; padding-top: 52px; padding-bottom: 52px; text-align: center; background-position: center center !important; background-size: cover !important;">
+            <p>
+            <a href="https://www.fullcontactmarketing.ca" target="_blank" style="padding: 0 4%;   color: #FFFFFF; font-family: sans-serif;    font-size: 30px;    font-weight: 600;   line-height: 41px;  text-align: center; text-decoration: none;">
+              ONE CONTACT, ONE PLAN, ONE RESULT
+              <br>
+              Talk to Us Today
+            </a>
+            </p>
+          </td>
+        </tr>
+  </table>
+  <!-- Email Body : END -->
+  <!-- Email Footer : BEGIN -->
+            <table align="center" width="700" class="email-container">
+            <tr>
+                <td style="padding: 20px 10px; width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;">
+                FULL CONTACT MARKETING | <a href="tel:1-800-728-6651">1.800.728.6651</a> | <a href="http://www.fullcontactmarketing.com" target="_blank">www.fullcontactmarketing.com</a>
+                <br>
+                <br>
+                <span class="mobile-link--footer">STAY CONNECTED</span>
+                <br>
+                <a href="https://facebook.com/fullcontactmarketingcanada" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/d1b7a300-e1d2-41e5-b5f3-ba1d0bccb516.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                <a href="https://www.instagram.com/fullcontact_fcm/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/1f395ba2-8798-4afb-a5e0-384d86daf972.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                <a href="https://www.linkedin.com/company/full-contact-marketing/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/408a7112-8e01-47de-b1e0-c9c5e9216f66.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                <br>
+                </td>
+              </tr>
+          </table>
+            <!-- Email Footer : END -->
+          </center></td>
+      </tr>
+    </table>
+</body>
+</html>
