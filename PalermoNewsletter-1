@@ -1,0 +1,385 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Palermo Village Newsletter</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+    width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+table table table {
+    table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+    border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+}
+</style>
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+        .dropTOP {
+            transform: translateY(-100px);
+        }
+
+        .dropPadding {
+            padding: 0px 14%;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                /* display: block !important; */
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+            .dropPadding {
+
+                padding: 0;
+            }
+        }
+    </style>
+    </head>
+    <body bgcolor="#ffffff" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table bgcolor="#e0e0e0" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td><center style="width: 100%;">
+          <!-- Email Header : BEGIN -->
+          <!-- LOGO : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <tr>
+              <td style="padding: 10px 0; text-align: center">
+                <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/5f3e1891-8831-4e21-893c-12162d57c56e.png?ver=1534433849000"   alt="alt_text" border="0">
+              </td>
+            </tr>
+          </table>
+          <!-- LOGO : END -->
+
+          <!-- Links : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding: 4%; font-family: sans-serif;	font-size: 0.9em;	font-weight: 300;	line-height: 17px; text-align: left;">
+                  <a href="tel:905-815-8888" style="text-decoration: none; color: #505050;" class="HeaderLink">(905) 815-8888</a>
+                </td>
+                <td style="padding: 4%;	font-family: sans-serif;	font-size: 0.9em;	font-weight: 300;	line-height: 17px; text-align: center;">
+                  <a href="https://www.instagram.com/explore/locations/860651531/palermo-village-dental/" style="text-decoration: none; color: #505050;" class="HeaderLink">Instagram</a>
+                </td>
+                <td style="padding: 4%;	font-family: sans-serif;	font-size: 0.9em;	font-weight: 300;	line-height: 17px; text-align: right;">
+                  <a href="https://www.facebook.com/PalermoVillageDental/" style="text-decoration: none; color: #505050;" class="HeaderLink">Facebook</a>
+                </td>
+              </tr>
+            </tr>
+            </table>
+            <!-- Links : END -->
+            <!-- Email Header : END -->
+
+            <!-- Email Upper Body : BEGIN -->
+            <!-- Double Column : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding-left: 2%; padding-right: 2%; text-align: center">
+                  <a href="https://www.facebook.com/PalermoVillageDental/photos/pcb.1010335759129357/1010335715796028/?type=3&theater" target="_blank">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/2bc0973c-3195-40f3-9a1a-4632e7705f70.png?ver=1534433850000" width="100% " alt="alt_text" border="0">
+                  </a>
+                </td>
+                <td style="padding-left: 2%; padding-right: 6%;	color: #454545;	font-family: sans-serif;	font-size: 1.0em;	font-weight: 300;	line-height: 1.2em;">
+                  <p>
+                    Over <b>17 000m</b> of climbing (twice the height of Everest), nearly <b>6000</b> calories burned each day, <b>2000km</b> of cycling, nearly <b>100</b> little villages, hamlets, town and cities, <b>13</b> straight days on the bike, <b>6 amazing people</b> to share this journey with, 2 weeks of amazing scenery, 1 epic adventure to tour Western Canada on a bicycle and <b>$6400</b> raised for Tour for Kids...PRICELESS! <br>
+                    <br>
+                    Thanks for tuning in to Facebook and sharing in my journey!
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <!-- Double Column : END -->
+
+            <!-- Opener : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding-left: 14%; padding-right: 14%; padding-bottom: 6%; padding-top: 6%; text-align: center;">
+                  <p style="	color: #3E3E3E;	font-family: sans-serif;	font-size: 1.4em;	font-weight: 600;	line-height: 1.4em;	text-align: center;">
+                    Services Spotlight: A Note from Dr. Blair
+                  </p>
+                  <p style="	color: #454545;	font-family: sans-serif;	font-size: 1.2em;	font-weight: 300;	line-height: 24px;	text-align: center;">
+                    I hope everyone is having a fantastic summer! I'm a dad, so I know that back-to-school time can bring a lot of our attention towards getting the kids ready for the change in routine. My advice? Make sure that you are taking care of yourself too!
+                    <br><br> <!-- Reddit spacing! -->
+                    In this edition of the e-newsletter, I wanted to highlight some of the benefits of the technologies that we are using to make your visits with us quicker and easier.
+                    <br><br> <!-- Reddit spacing! -->
+                    And, if you find yourself running out of activities to keep the kids entertained, we have also included a simple science experiment recipe that you can try at home!
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <!-- Opener : END -->
+            <!-- Triple Column : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding: 4%; text-align: center;">
+                  <a href="http://palermovillagedental.com/cosmetic-dentistry/" target="_blank" style="text-decoration: none;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/0d304d4e-5267-4732-abdc-6160c70b935e.png?ver=1534433852000" alt="alt_text" border="0">
+                    <p style="	color: #454545;	font-family: sans-serif;	font-size: 0.9em;	font-weight: bold;	letter-spacing: 2px;	line-height: 1em;	text-align: center; text-decoration: none !important;">
+                      COSMETIC DENTISTRY
+                    </p>
+                  </a>
+                </td>
+                <td style="padding: 4%; text-align: center;">
+                  <a href="http://palermovillagedental.com/cerec-a-single-visit-restorations/" target="_blank" style="text-decoration: none;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/9c047c60-2e0a-4745-8a18-0203cde14061.png?ver=1534433852000" alt="alt_text" border="0">
+                    <p style="	color: #454545;	font-family: sans-serif;	font-size: 0.9em;	font-weight: bold;	letter-spacing: 2px;	line-height: 1em;	text-align: center; text-decoration: none !important;">
+                      SAME-DAY CROWNS
+                    </p>
+                  </a>
+                </td>
+                <td style="padding: 4%; text-align: center;">
+                  <a href="http://palermovillagedental.com/solea-dental-laser/" target="_blank" style="text-decoration: none;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/0a23502b-a18f-48cc-8548-eb02485dd43d.png?ver=1534433849000" alt="alt_text" border="0">
+                    <p style="	color: #454545;	font-family: sans-serif;	font-size: 0.9em;	font-weight: bold;	letter-spacing: 2px;	line-height: 1em;	text-align: center; text-decoration: none !important;">
+                      NEEDLE-FREE DENTISTRY
+                    </p>
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Triple Column : END -->
+      <!-- Email Upper Body - END -->
+
+      <!-- Header & Column : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td bgcolor="#222222" valign="middle" style="text-align: center;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/v84q3d8v7YU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </td>
+          <!-- Fading Column : BEGIN -->
+          <tr>
+              <td align="center" valign="top" class="dropPadding">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                <td bgcolor="#9DC9BA" valign="top" class="stack-column-center">
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-top: 5%; padding-bottom: 5%; padding-left: 6%; padding-right: 6%; 	color: #000000;	font-family: sans-serif;	font-size: 1.4em;	font-weight: bold;	line-height: 25px;	text-align: center;">
+                        <a href="http://palermovillagedental.com/technology/" target="_blank" style="text-decoration: none; color: #000000;">
+                        Check the Check Up off your To-Do List!
+                        <p style="padding-right: 2%; padding-left: 2%; color: #454545;	font-family: sans-serif;	font-size: 0.8em;	font-weight: 300;	line-height: 22px;	text-align: center;">
+                          Click this video to see how we are using technology to emphasize patient focused care for patients of every age!
+                        </p>
+                        </a>
+                       </td>
+                    </tr>
+                  </table>
+                </td>
+                </tr>
+                </table>
+                <!-- Fading Column : END -->
+              </td>
+            </tr>
+      </table>
+      <!-- Header & Column : END -->
+
+      <!-- Quick Spacer : START -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <tr><td style="padding-top: 40px;"></td></tr> <!-- This is bad manners. Don't do this. -->
+      </table>
+      <!-- Quick Spacer : START -->
+
+    <table align="center" bgcolor="#FFFFFF" width="700" class="email-container">
+      <!-- Image : BEGIN -->
+      <tr>
+        <td bgcolor="#9DC9BA">
+          <a href="https://www.facebook.com/notes/palermo-village-dental/make-your-own-glitter-slime/1045907972238802/" target="_blank" style="text-decoration: none;">
+            <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/09b7086c-b7fd-477b-af6b-68aa88e4bd59.png?ver=1533839178000" style="width: 100%; height: auto; border: 0;">
+          </a>
+        </td>
+      </tr>
+      <!-- Image : END -->
+      <tr>
+        <td style="text-align: center; padding: 20px 6%;">
+          <a href="https://www.facebook.com/notes/palermo-village-dental/make-your-own-glitter-slime/1045907972238802/" target="_blank" style="text-decoration: none;">
+            <p style="color: #3E3E3E; font-family: sans-serif; font-size: 1.8em; font-weight: 600;   line-height: 44px; text-align: center;">
+              MAKE YOUR OWN GLITTER SLIME
+            </p>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; padding: 16px 14%;">
+          <p style="color: #454545; font-family: sans-serif;    font-size: 1.2em;    font-weight: 300;   line-height: 22px;  text-align: center;">
+            Here's the fastest, easiest, mess-free slime recipe that you will ever need. The fact that it is glittery is an added bonus!<br>
+            <br>
+            INGREDIENTS<br>
+            <br>
+            1/2 TBSP baking soda<br>
+            1 1/2 TBSP contact lens solution<br>
+            6 fl oz Elmer's Glitter Glue<br>
+            IMPORTANT: Not every contact lens solution is ideal for making slime. Make sure it has boric acid in the ingredients.<br>
+            <br>
+            DIRECTIONS<br>
+            <br>
+            Find a bowl, cup, or plate to mix your slime in.<br>
+            Pour the entire contents of a 6 oz Elmer's Glitter Glue into the blow.<br>
+            Add 1/2 TBSP baking soda to the glue and stir.<br>
+            Add 1 TBSP contact solution to the glue mixture. Mix with a spoon until slime begins to form and gets firm.<br>
+            Once slime becomes to difficult to stir with a spoon, take slime out of the bowl and use your hands to finish combining the ingredients.<br>
+            If slime is too sticky, add 1/4 TBSP contact solution to the mixture. The slime will become significantly less sticky. <br>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+  <!-- Final Body : BEGIN -->
+  <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+  <tr>
+    <td style="text-align: center; padding: 20px 6%;">
+      <p style="color: #3E3E3E; font-family: sans-serif; font-size: 1.6em; font-weight: 600;   line-height: 44px; text-align: center;">
+        CONTACT US FOR YOUR NEXT VISIT
+      </p>
+    </td>
+  </tr>
+  </table>
+  <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+  <!-- Image : BEGIN -->
+  <tr>
+    <td bgcolor="#ffffff" valign="middle" style="overflow: hidden; text-align: center; background-position: center center !important; background-size: cover !important;">
+      <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/7cdef063-e2f8-41b2-8047-f24df816c3eb.png?ver=1534433849000" style="width: 100%; height: auto;">
+    </td>
+  </tr>
+  </table>
+  <!-- Image : END -->
+
+  <!-- Double Column : BEGIN -->
+  <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+    <tr>
+      <td style="padding-top: 8%; padding-bottom: 8%; padding-right: 8%; padding-left: 13%; text-align: center">
+        <a href="https://www.google.ca/maps/dir/''/palermo+village+dental/data=!4m5!4m4!1m0!1m2!1m1!1s0x882b671a42f399e7:0xa5e42fcd0c4a2020?sa=X&ved=2ahUKEwiWjeqfnfTcAhWo7YMKHTOkDkcQ9RcwDnoECAcQEw" target="_blank">
+          <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/0eefa201-10da-47c7-ad0b-eb5f862350be.png?ver=1534437501000" width="100% " alt="alt_text" border="0">
+        </a>
+      </td>
+      <td style="padding: 5%; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+        <p style="color: #454545;	font-family: sans-serif;	font-size: 1.4em;	font-weight: 300;	line-height: 29px;	text-align: left;">
+          Palermo Village Dental
+        </p>
+        <p style="color: #454545;	font-family: sans-serif;	font-size: 1.2em;	font-weight: 500;	line-height: 22px;">
+          2525 Old Bronte Rd. Suite #290 <br>
+          Oakville, ON, L6M 4J2
+          <br>
+          905 815 8888
+          <br>
+        </p>
+      </td>
+    </tr>
+  </table>
+  <!-- Double Column : END -->
+
+<!-- Final Body : END -->
+
+  <!-- Email Body : END -->
+
+  <!-- Email Footer : BEGIN -->
+  <table align="center" bgcolor="#3A3A3A" width="700" class="email-container">
+    <tr>
+      <td style="padding: 0%; width: 100%; font-size: 0.7em; line-height: 13px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #FFFFFF;">
+          <p style="padding: 2%; width: 100%;font-size: 0.9em; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #FFFFFF;">
+          <br>
+          <br>
+          <a href="https://www.facebook.com/PalermoVillageDental/" target="_blank" style="color: #FFFFFF; text-decoration: none;"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/d1b7a300-e1d2-41e5-b5f3-ba1d0bccb516.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+          <a href="https://www.instagram.com/explore/locations/860651531/palermo-village-dental/" target="_blank" style="color: #FFFFFF; text-decoration: none;"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/1f395ba2-8798-4afb-a5e0-384d86daf972.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+          <a href="https://www.google.ca/search?q=palermo+village+dental&oq=palermo+village+dental+&aqs=chrome..69i57j69i60l3j0.3334j0j4&sourceid=chrome&ie=UTF-8#lrd=0x882b671a42f399e7:0xa5e42fcd0c4a2020,1" target="_blank" style="color: #FFFFFF; text-decoration: none;"><img src="https://i1.wp.com/www.vectorico.com/wp-content/uploads/2018/02/Google-Plus-Icon.png?resize=300%2C300&ssl=1" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+          <br>
+          Palermo Village Dental   |   <a href="http://www.palermovillagedental.com" target="_blank" style="color: #FFFFFF; text-decoration: none;">www.palermovillagedental.com</a>   |  <a href="tel:905-815-8888" style="color: #FFFFFF; text-decoration: none;">905-815-8888</a>
+        </p>
+      </td>
+    </tr>
+  </table>
+            <!-- Email Footer : END -->
+
+</body>
+</html>
