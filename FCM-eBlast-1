@@ -146,7 +146,7 @@ a[x-apple-data-detectors] {
                   <a href="https://facebook.com/fullcontactmarketingcanada" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/d1b7a300-e1d2-41e5-b5f3-ba1d0bccb516.png?ver=1532373010000" width="24px" height="24px" alt="alt_text" border="0" style="padding: 4px;"></a>
                   <a href="https://www.instagram.com/fullcontact_fcm/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/1f395ba2-8798-4afb-a5e0-384d86daf972.png?ver=1532373010000" width="24px" height="24px" alt="alt_text" border="0" style="padding: 4px;"></a>
                   <a href="https://www.linkedin.com/company/full-contact-marketing/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/408a7112-8e01-47de-b1e0-c9c5e9216f66.png?ver=1532373010000" width="24px" height="24px" alt="alt_text" border="0" style="padding: 4px;"></a>
-                  <p style="	color: #505050;	font-family: sans-serif;	font-size: 14px;	font-weight: 300;	line-height: 17px;">1.800.728.6651</p>
+                  <a href="tel:1-800-728-6651" style="color: #505050;	font-family: sans-serif;	font-size: 14px;	font-weight: 300;	line-height: 17px; text-decoration: none;">1.800.728.6651</a>
               </td>
             </tr>
             </table>
@@ -156,8 +156,8 @@ a[x-apple-data-detectors] {
             <!-- Hero Image, Flush : BEGIN -->
               <tr>
                 <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/8add0c0e-8eca-49f6-baba-1a0d02b53529.png?ver=1532373009000" bgcolor="#222222" style="padding-top: 40px; padding-bottom: 40px; text-align: center; background-position: center center !important; background-size: cover !important;" class="stack-column-center">
-                  <p>
-                    <a href="https://www.fullcontactmarketing.ca/do-you-really-need-seo/" target="_blank" style="color: #FFFFFF;  font-family: sans-serif;    font-size: 34px;    font-weight: 600;   line-height: 41px;  text-align: center; text-decoration: none;">
+                  <p style="padding: 0 5%;">
+                    <a href="http://www.fullcontactmarketing.ca/are-you-ready-for-facebook-ads/" target="_blank" style="color: #FFFFFF;  font-family: sans-serif;    font-size: 34px;    font-weight: 600;   line-height: 41px;  text-align: center; text-decoration: none;">
                       Are You Ready For <br>
                       Facebook Ads?
                     </a>
@@ -254,7 +254,7 @@ a[x-apple-data-detectors] {
             <table cellspacing="0" cellpadding="5" border="0" align="center" style="margin: auto">
               <tr>
                 <td style="height: 42px; width: 212px; background-color: #E76009; text-align: center; text-decoration:none;">
-                  <a href="http://www.fullcontactmarketing.ca/are-you-ready-for-facebook-ads/" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 17px;    font-weight: 300;   letter-spacing: 1.4px;  line-height: 42px;  text-align: center;  text-decoration: none;">
+                  <a href="http://www.fullcontactmarketing.ca/contact/" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 17px;    font-weight: 300;   letter-spacing: 1.4px;  line-height: 42px;  text-align: center;  text-decoration: none;">
                     <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->REQUEST A QUOTE<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
                   </a>
                 </td>
@@ -277,11 +277,11 @@ a[x-apple-data-detectors] {
         <tr>
           <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/a17b445a-f381-4dc1-9e84-30f943ccb165.png?ver=1532373009000" bgcolor="#222222" valign="middle" style="padding-top: 20px; padding-bottom: 20px; padding-left: 14%; padding-right: 14%; text-align: center; background-position: center center !important; background-size: cover !important;">
             <p>
-              <a href="https://www.fullcontactmarketing.ca" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 36px;    font-weight: 600;   line-height: 49px;  text-align: center; text-decoration: none;">
+              <a href="https://www.fullcontactmarketing.ca" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 1.8em;    font-weight: 600;   line-height: 1.2em;  text-align: center; text-decoration: none;">
                 FCM is <br> DIFFERENT
               </a>
             </p>
-            <p style="color: #FFFFFF;   font-family: sans-serif;    font-size: 16px;    font-weight: 600;   line-height: 15px;  text-align: center;">
+            <p style="color: #FFFFFF;   font-family: sans-serif;    font-size: 1.0em;    font-weight: 600;   line-height: 1.0em;  text-align: center;">
               Full Contact Marketing offers exclusive and highly effective services to its dental partners by using a strategic combination of
             </p>
           </td>
@@ -295,12 +295,12 @@ a[x-apple-data-detectors] {
                       <td style="padding-top: 10px; padding-left: 20px; text-align: left"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/596dfea3-d8c1-4dea-ab78-53abfbe63ba1.png?ver=1532373009000" width="53" height="53" alt="alt_text" border="0" class="fluid"></td>
                     </tr>
                     <tr>
-                      <td style="padding: 0px 20px; color: #484F59; font-family: sans-serif;    font-size: 14px;    font-weight: 600;   line-height: 28px;  text-align: left;">
+                      <td style="padding-left: 20px; padding-bottom: 4%; padding-right: 4%; padding-top: 4%; color: #484F59; font-family: sans-serif;    font-size: 0.9em;    font-weight: 600;   line-height: 1.5em;  text-align: left;">
                         LOCAL SEO
                       </td>
                     </tr>
                     <tr>
-                      <td style="padding-bottom: 10px; padding-left: 20px; padding-right: 10px; color: #454545; font-family: sans-serif;    font-size: 13px;    font-weight: 300;   line-height: 16px; text-align: left;">
+                      <td style="padding-bottom: 10px; padding-left: 20px; padding-right: 10px; color: #454545; font-family: sans-serif;    font-size: 0.9em;    font-weight: 300;   line-height: 1.2em; text-align: left;">
                         We now offer an enhanced package for search engine optimization that includes 1 blog post per month
                       </td>
                     </tr>
@@ -312,12 +312,12 @@ a[x-apple-data-detectors] {
                       <td style="padding-top: 10px; padding-left: 20px; text-align: left"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/54356d3f-817a-4a96-9d7a-08ad914accfc.png?ver=1532373009000" width="53" height="53" alt="alt_text" border="0" class="fluid"></td>
                     </tr>
                     <tr>
-                      <td style="padding: 0px 20px; color: #484F59; font-family: sans-serif;    font-size: 14px;    font-weight: 600;   line-height: 28px;  text-align: left;">
+                      <td style="padding-left: 20px; padding-bottom: 4%; padding-right: 4%; padding-top: 4%; color: #484F59; font-family: sans-serif;    font-size: 1.0em;    font-weight: 600;   line-height: 1.2em;  text-align: left;">
                          PAY PER CLICK AD CAMPAIGN
                        </td>
                     </tr>
                     <tr>
-                      <td style="padding-bottom: 10px; padding-left: 20px; padding-right: 10px; color: #454545; font-family: sans-serif;    font-size: 13px;    font-weight: 300;   line-height: 16px; text-align: left;">
+                      <td style="padding-bottom: 10px; padding-left: 20px; padding-right: 10px; color: #454545; font-family: sans-serif;    font-size: 0.9em;    font-weight: 300;   line-height: 1.2em; text-align: left;">
                         If you are looking to increase traffic quickly, ask us about our Facebook Ad and Google Adword campaigns. We manage the campaign - you take the calls!
                        </td>
                     </tr>
@@ -366,7 +366,7 @@ a[x-apple-data-detectors] {
         </td>
       </tr>
       <tr>
-        <td style="text-align: center; padding: 0px 16%;">
+        <td style="text-align: center; padding: 4% 8%;">
           <p style="color: #3E3E3E; font-family: sans-serif;    font-size: 26px; letter-spacing: 2.1px; font-weight: 600;   line-height: 31px; text-align: center;">
             WE'LL PLAN THE WORK <br> AND WORK THE PLAN!
           </p>
@@ -378,7 +378,7 @@ a[x-apple-data-detectors] {
         <tr>
           <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/8add0c0e-8eca-49f6-baba-1a0d02b53529.png?ver=1532373009000" bgcolor="#222222" style="width: 100%; padding-top: 52px; padding-bottom: 52px; text-align: center; background-position: center center !important; background-size: cover !important;">
             <p>
-            <a href="https://www.fullcontactmarketing.ca" target="_blank" style="padding: 0 4%;   color: #FFFFFF; font-family: sans-serif;    font-size: 30px;    font-weight: 600;   line-height: 41px;  text-align: center; text-decoration: none;">
+            <a href="https://www.fullcontactmarketing.ca" target="_blank" style="padding: 4%;   color: #FFFFFF; font-family: sans-serif;    font-size: 30px;    font-weight: 600;   line-height: 41px;  text-align: center; text-decoration: none;">
               ONE CONTACT, ONE PLAN, ONE RESULT
               <br>
               Talk to Us Today
@@ -389,7 +389,7 @@ a[x-apple-data-detectors] {
   </table>
   <!-- Email Body : END -->
   <!-- Email Footer : BEGIN -->
-            <table align="center" width="700" class="email-container">
+        <table align="center" width="700" class="email-container">
             <tr>
                 <td style="padding: 20px 10px; width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;">
                 FULL CONTACT MARKETING | <a href="tel:1-800-728-6651">1.800.728.6651</a> | <a href="http://www.fullcontactmarketing.com" target="_blank">www.fullcontactmarketing.com</a>
