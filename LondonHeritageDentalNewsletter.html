@@ -1,0 +1,512 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>London Heritage Dental Newsletter</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+    width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+table table table {
+    table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+    border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+}
+</style>
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+        .dropTOP {
+            transform: translateY(-100px);
+        }
+
+        .dropPadding {
+            padding: 0px 14%;
+        }
+
+        .recenter{
+          text-align: left;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                /* display: block !important; */
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+            .dropPadding {
+
+                padding: 0;
+            }
+            .hero {
+              width: 100%;
+              height: auto;
+
+
+            }
+        }
+
+    @media screen and (max-width: 480px){
+        .responsiveColumns{
+            width:100% !important;
+            background-color: #FFFFFF;
+        }
+
+        .columnContainer{
+            display:block !important;
+            width:100% !important;
+        }
+
+        .columnImage{
+            height:auto !important;
+            max-width:480px !important;
+            width:100% !important;
+        }
+
+        .leftColumnContent{
+            font-size:16px !important;
+            line-height:125% !important;
+            width:100% !important;
+
+
+        }
+
+        .rightColumnContent{
+            font-size:16px !important;
+            line-height:125% !important;
+            width:100% !important;
+
+            text-align: center;
+        }
+
+        .responsiveButton{
+          text-align: center !important;
+          align: center !important;
+        }
+
+        .bottomStack {
+          padding-top: 2% !important;
+        }
+
+        .topStack {
+          padding-bottom: 2% !important;
+        }
+        .recenter {
+          text-align: center;
+        }
+    }
+    </style>
+    </head>
+    <body bgcolor="#ffffff" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table bgcolor="#e0e0e0" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td><center style="width: 100%;">
+          
+          <!-- Email Header : BEGIN -->
+          <!-- LOGO : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <tr>
+                <td style="padding: 20px 0; text-align: center">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/6632ad38-71db-4b14-863b-fb42cf3922ec.png?ver=1534813298000"   alt="alt_text" border="0">
+                </td>
+            </tr>
+          </table>
+          <!-- LOGO : END -->
+
+          <!-- Links : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <tr>
+              <td style="padding: 3%; color: #505050;	font-family: sans-serif;	font-size: 0.75em;	font-weight: 300;	line-height: 17px; text-align: left;">
+                <a href="tel:403-255-8946" style="text-decoration: none; color: #505050;">403 255 8946</a>
+              </td>
+              <td style="padding: 3%; font-family: sans-serif;	font-size: 0.75em;	font-weight: 300;	line-height: 17px; text-align: center;">
+                <a href="https://www.google.ca/search?q=London+Heritage+Dental+Calgary" target="_blank"   style="text-decoration: none; color: #505050;">Google</a>
+              </td>
+              <td style="padding: 3%;	font-family: sans-serif;	font-size: 0.75em;	font-weight: 300;	line-height: 17px; text-align: right;">
+                <a href="https://www.facebook.com/LondonHeritageDental/" target="_blank" style="text-decoration: none; color: #505050;">Facebook</a>
+              </td>
+            </tr>
+            </table>
+            <!-- Links : END -->
+            <!-- Email Header : END -->
+
+            <!-- Email Upper Body : BEGIN -->
+            <!-- Responsive COlumns : BEGIN -->
+            <!-- <table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="700" id="responsiveColumns"> -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td align="center" valign="top" width="50%" class="columnContainer">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td class="leftColumnContent">
+                          <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/8a3955f9-e4b8-4b38-b190-1069ed16057a.png?ver=1534813298000" width="100%" style="max-width: 280px;" alt="alt_text" border="0" class="columnImage">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td align="center" valign="top" width="50%" class="columnContainer">
+                  <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                      <td valign="top" class="rightColumnContent">
+                        <p style="color: #032A84;    font-family: sans-serif;    font-size: 1.2em;    font-weight: 600;   line-height: 1.1em; text-decoration: none;" class="recenter">
+                          THANK YOU FOR OUR FIRST TWO MONTHS OF SUCCESS!
+                        </p>
+                        <p style="padding-bottom: 5%; padding-right: 2%;	color: #000000;	font-family: sans-serif;	font-size: 0.6em;	line-height: 1.3em;">
+                          For the last few years, it has been my vision to open a clinic that reflects the <b>quality of dental care</b> we provide, combined with a <b>modern and relaxed atmosphere</b> for you to enjoy.
+                          <br>
+                          <br>
+                          While the clinic is new, our priorities and commitment to our patients remains constant. You can count on receiving the <b>same excellence of dentistry</b> that you are used to, provided by the same team members that you are used to seeing.
+                          <br>
+                        </p>
+                        <!-- Button : Begin -->
+                        <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto; padding-bottom: 1%;" class="responsiveButton">
+                          <tr>
+                            <td style="padding: 8px; height: 35px; width: 152px; background-color: #381852; text-align: center; text-decoration:none;">
+                              <a href="tel:403-255-8946" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 1.2em;    font-weight: 100;   letter-spacing: 1.4px;  line-height: 1.5em;  text-align: center;  text-decoration: none;">
+                                <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->CONTACT US<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif] -->
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- Button : END -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Responsive Columns : END -->
+
+            <!-- Triple Column : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding: 3%; text-align: center;">
+                  <a href="https://www.google.ca/maps/dir/''/london+heritage+dental/data=!4m5!4m4!1m0!1m2!1m1!1s0x5371711fdd5b377d:0x77d5e7b3decd85ab?sa=X&ved=2ahUKEwiTnPOo3_TcAhUI9YMKHegCChwQ9RcwEnoECAcQEw" target="_blank" style="text-decoration: none;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/ba2acd06-b879-498b-bf31-7903af1684f7.png?ver=1534813298000" width="50%" alt="alt_text" border="0">
+                    <p style="	color: #454545;	font-family: sans-serif;	font-size: 1em;	font-weight: bold;	letter-spacing: 3.3px;	line-height: 19px;	text-align: center; text-decoration: none !important;">
+                      NEW OFFICE
+                    </p>
+                  </a>
+                </td>
+                <td style="padding: 6%; text-align: center;">
+                  <a href="https://www.facebook.com/LondonHeritageDental/photos/a.1879295288799484/1936692733059739/?type=3&theater" target="_blank" style="text-decoration: none;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/6632ad38-71db-4b14-863b-fb42cf3922ec.png?ver=1534813298000" width="80%" alt="alt_text" border="0">
+                    <p style="	color: #454545;	font-family: sans-serif;	font-size: 1em;	font-weight: bold;	letter-spacing: 3.3px;	line-height: 19px;	text-align: center; text-decoration: none !important;">
+                      NEW BRAND
+                    </p>
+                  </a>
+                </td>
+                <td style="padding: 3%; text-align: center;">
+                  <a href="https://www.londonheritagedental.ca/the-team/" target="_blank" style="text-decoration: none;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/0ea45481-9561-4412-840d-797b40da022e.png?ver=1534813298000" width="50%  " alt="alt_text" border="0">
+                    <p style="	color: #454545;	font-family: sans-serif;	font-size: 1em;	font-weight: bold;	letter-spacing: 3.3px;	line-height: 19px;	text-align: center; text-decoration: none !important;">
+                      SAME TEAM
+                    </p>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+
+                </td>
+              </tr>
+            </table>
+            <!-- Triple Column : END -->
+      <!-- Email Upper Body - END -->
+
+      <!-- Responsive Columns : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td align="center" valign="top" width="50%" class="columnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+              <tr>
+                <td class="leftColumnContent" valign="top" style="text-align: center; padding: 6%;">
+                    <table align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                    <td style="text-align: center; background-color: #381852;">
+                      <a href="http://www.londonheritagedental.ca" target="_blank" style="text-decoration: none;">
+                        <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/a3f1e523-4ce3-4d5e-8666-651a1bd663a1.png?ver=1534813299000" style="padding: 2%; width: inherit; height: 100%; border: 0;">
+                        <p style="padding-left: 2%; padding-right: 2%; padding-bottom: 2%; padding-top: 2%; color: #FFFFFF;	font-family: sans-serif; 	font-size: 1.1em;	font-weight: 600;	line-height: 1.2em;	text-align: center;">
+                          VIEW OUR NEW WEBSITE
+                        </p>
+                        <p style="padding-left: 1%; padding-right: 1%; padding-bottom: 6%; padding-top: 1%;	color: #FFFFFF;	font-family: sans-serif;	font-size: 1.0em;	font-weight: 300;	line-height: 1.0em;	text-align: center;">
+                          Londonheritagedental.ca
+                        </p>
+                      </a>
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="center" valign="top" width="50%" class="columnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+              <tr>
+                <td valign="top" class="rightColumnContent" style="text-align: center; padding: 6%;">
+                  <table align="center" bgcolor="#ffffff" width="100%">
+                  <tr>
+                  <td style="text-align: center; background-color: #381852;">
+                    <a href="https://www.facebook.com/LondonHeritageDental/" target="_blank" style="text-decoration: none;">
+                      <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/91ae1aab-19a5-460e-9028-10c6da39c0cf.png?ver=1534813299000" style="padding: 2%; width: inherit; height: 100%; border: 0;">
+                      <p style="padding-left: 2%; padding-right: 2%; padding-bottom: 2%; padding-top: 2%; color: #FFFFFF;	font-family: sans-serif; 	font-size: 1.1em;	font-weight: 600;	line-height: 1.2em;	text-align: center;">
+                        VISIT OUR FACEBOOK PAGE
+                      </p>
+                      <p style="padding-left: 1%; padding-right: 1%; padding-bottom: 6%; padding-top: 1%;	color: #FFFFFF;	font-family: sans-serif;	font-size: 1.0em;	font-weight: 300;	line-height: 1.0em;	text-align: center;">
+                        @Londonheritagedental
+                      </p>
+                    </a>
+                  </td>
+                  </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Responsive Columns : END -->
+
+      <!-- Header & Column : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container" style="overflow: hidden;">
+        <tr>
+          <td align="center" style="padding-bottom: 2em;">
+            <div align="center" style="text-align: center; width: 100%; height: 20px; overflow: visible;">
+              <img align="center" src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/c529c23c-96bc-475a-90af-12213d23ba4a.png?ver=1534813299000">
+            </div>
+            <p style="padding-top: 1%;">
+              <a href="https://www.facebook.com/notes/london-heritage-dental/your-ideal-smile-is-closer-than-you-think/1995240217204990/" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 2.1em;    font-weight: 600;   line-height: 1.2em;  text-align: center; text-decoration: none;">
+                Your Ideal Smile is <br>
+                Closer than You Think
+              </a>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <!-- Fading Column : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td align="left" style="width: 10%;"></td> <!-- FAKEOUT! -->
+          <td align="center" bgcolor="#381852" valign="top" style="width: 70%; padding-top: 4%; padding-bottom: 4%; padding-left: 5%; padding-right: 5%; color: #FFFFFF; font-family: sans-serif;    font-size: 0.7em;    font-weight: 200;   line-height: 16px; text-align: center;">
+            <p>
+              Cosmetic dental treatments don't have to be drastic – and knowing your options is the best way to ensure that you achieve the results you expect.  Achieving a beautiful smile is easier than you think. Even the subtlest changes can make a significant difference to the overall appearance of your smile, giving you newfound confidence.
+              <br>
+              <br>
+              If you are looking to enhance your smile with simple cosmetic options, here are a few examples of what you can do:
+              <br>
+              <br>
+              <p style="font-weight: 600;">
+              Renew a filling <br>
+              Place a crown or veneer on a dark tooth <br>
+              Bleach or whiten your teeth <br>
+              </p>
+            </p>
+          </td>
+          <td align="right" style="width: 10%;"></td> <!-- FAKEOUT! -->
+        </tr>
+        <!-- Fading Column : END -->
+      </table>
+      <!-- Header & Column : END -->
+
+      <!-- Final Body : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <tr>
+        <td style="text-align: center; padding: 20px 6%;">
+          <p style="color: #3E3E3E; font-family: sans-serif; font-size: 2.1em; font-weight: 600;   line-height: 1.8em; text-align: center;">
+            CONTACT US FOR YOUR NEXT VISIT
+          </p>
+        </td>
+      </tr>
+      <!-- Centered Pair : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <tr>
+        <td align="right" style="padding-top: 2%; padding-bottom: 8%; padding-right: 3%;">
+          <a href="tel:403-255-8946">
+          <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/657b5a25-6002-46fe-98e3-93ff9240d9c4.png?ver=1534813298000" style="width: 61px; height:61px; border: 0;">
+        </td>
+        <td align="left" style="padding-top: 2%; padding-bottom: 8%; padding-left: 3%;">
+          <a href="mailto:info@londonheritagedental.ca">
+            <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/a3bb33f3-f9b3-42d5-8039-8c478d44c810.png?ver=1534813298000" style="width: 61px; height:61px; border: 0;">
+          </a>
+        </td>
+      </tr>
+      </table>
+      <!-- Centered Pair : END -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <!-- Image : BEGIN -->
+      <tr>
+        <td bgcolor="#ffffff" valign="middle" style="overflow: hidden; text-align: center; background-position: center center !important; background-size: cover !important;">
+          <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/fa9f7ac8-7446-4d1f-a62e-4b9ba8c25e09.png?ver=1534813298000" style="width: 100%; height: auto;">
+        </td>
+      </tr>
+      </table>
+      <!-- Image : END -->
+
+      <!-- Responsive Columns : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td align="center" valign="top" width="50%" class="columnContainer">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td style="text-align: center;" class="leftColumnContent">
+                    <table align="center" bgcolor="#ffffff" width="100%">
+                    <tr>
+                    <td style="padding-top: 8%; padding-bottom: 8%; padding-right: 1%; text-align: center" class="topStack">
+                      <a href="https://www.google.com/maps/place/London+Heritage+Dental/@50.9757034,-114.0744777,17z/data=!3m1!4b1!4m5!3m4!1s0x5371711fdd5b377d:0x77d5e7b3decd85ab!8m2!3d50.9757!4d-114.072289" target="_blank" style="text-decoration: none;">
+                        <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/170d9a42-ec36-49dc-9ad8-b91a0be854c9.png?ver=1534813298000" style="padding-top: 2%; width: 100%; height: inherit;">
+                      </a>
+                    </td>
+                    </tr>
+                    </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td align="center" valign="top" width="50%" class="columnContainer">
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+              <tr>
+                <td valign="top" class="rightColumnContent"style="text-align: center;">
+                  <table align="center" bgcolor="#ffffff" width="100%">
+                  <tr>
+                  <td style="padding-top: 8%; padding-bottom: 8%; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;" class="bottomStack">
+                    <a href="http://www.londonheritagedental.ca" target="_blank" style="text-decoration: none;">
+                      <p style="color: #454545;	font-family: sans-serif;	font-size: 1.4em;	font-weight: 300;	line-height: 29px;	text-align: left;">
+                        London Heritage
+                      </p>
+                      <p style="color: #454545;	font-family: sans-serif;	font-size: 1.2em;	font-weight: 500;	line-height: 22px;">
+                        8835 Macleod Trail SW Unit #503, <br>
+                        Calgary, AB T2H 0M2
+                        <br>
+                        (403) - 255 - 8946
+                        <br>
+                      </p>
+                    </a>
+                  </td>
+                  </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- Responsive Columns : END -->
+
+    <!-- Final Body : END -->
+  <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+  <!-- Email Body : END -->
+
+  <!-- Email Footer : BEGIN -->
+            <table align="center" width="700" class="email-container">
+            <tr>
+              <td style="text-align: center;">
+                <br>
+                <a href="https://www.facebook.com/LondonHeritageDental/" target="_blank"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/d1b7a300-e1d2-41e5-b5f3-ba1d0bccb516.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+                <a href="https://www.google.ca/search?q=London+Heritage+Dental+Calgary" target="_blank"><img src="https://i1.wp.com/www.vectorico.com/wp-content/uploads/2018/02/Google-Plus-Icon.png?resize=300%2C300&ssl=1" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+              </td>
+            </tr>
+            <tr>
+                <td style="padding: 20px 10px; width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;">
+                  LONDON HERITAGE DENTAL | <a href="http://www.londonheritagedental.ca" target="_blank">www.londonheritagedental.ca</a> | <a href="tel:905-839-4486">905.839.4486</a>
+                  <br>
+                </td>
+              </tr>
+          </table>
+            <!-- Email Footer : END -->
+          </center></td>
+      </tr>
+    </table>
+</body>
+</html>
