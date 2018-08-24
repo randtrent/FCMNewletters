@@ -1,0 +1,403 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Fairlawn Newsletter</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+    width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+table table table {
+    table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+    border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+}
+</style>
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+        .dropTOP {
+            transform: translateY(-100px);
+        }
+
+        .dropPadding {
+            padding: 0px 14%;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                /* display: block !important; */
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+            .dropPadding {
+
+                padding: 0;
+            }
+        }
+    </style>
+    </head>
+    <body bgcolor="#ffffff" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table bgcolor="#e0e0e0" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;">
+      <tr>
+        <td><center style="width: 100%;">
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+            <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+            <!-- Visually Hidden Preheader Text : END -->
+
+          <!-- Email Header : BEGIN -->
+          <!-- LOGO : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <tr>
+              <td style="padding: 10px 0; text-align: center">
+                <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/ee06931d-acc5-4b48-80d0-b9345c19fa88.png?ver=1533830958000"   alt="alt_text" border="0">
+              </td>
+            </tr>
+          </table>
+          <!-- LOGO : END -->
+
+          <!-- Links : BEGIN -->
+          <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding: 4%; font-family: sans-serif;	font-size: 0.9em;	font-weight: 300;	line-height: 17px; text-align: left;">
+                  <a href="http://www.fairlawndentalcentre.ca" target="_blank" style="text-decoration: none; color: #505050;" class="HeaderLink">Website</a>
+                </td>
+                <td style="padding: 4%;	font-family: sans-serif;	font-size: 0.9em;	font-weight: 300;	line-height: 17px; text-align: center;">
+                  <a href="https://business.facebook.com/Dr.FerhanaJaleel/" target="_blank" style="text-decoration: none; color: #505050;" class="HeaderLink">Facebook</a>
+                </td>
+                <td style="padding: 4%;	font-family: sans-serif;	font-size: 0.9em;	font-weight: 300;	line-height: 17px; text-align: right;">
+                  <a href="tel:613-829-6868" style="text-decoration: none; color: #505050;" class="HeaderLink">613.829.6868</a>
+                </td>
+              </tr>
+            </tr>
+            </table>
+            <!-- Links : END -->
+            <!-- Email Header : END -->
+
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+            <!-- Hero Image, Flush : BEGIN -->
+              <tr>
+                <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/9569e6b2-91e4-40fc-b482-caf5b75ad5d4.png?ver=1533830957000.png" bgcolor="#222222" style="padding: 12%; text-align: center; background-position: center center !important; background-size: cover !important;" class="stack-column-center">
+                  <p style="color: #FFFFFF;  font-family: sans-serif;    font-size: 1.5em;    font-weight: 400;   line-height: 26px;  text-align: center;">
+                      A Healthy Smile Is The Best <br>
+                      Back To School Accessory
+                  </p>
+                </td>
+              </tr>
+            <!-- Hero Image, Flush : END -->
+            </table>
+
+            <!-- Email Upper Body : BEGIN -->
+            <!-- Opener : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding-left: 12%; padding-right: 12%; padding-bottom: 5%; padding-top: 5%; text-align: center;">
+                  <p style="	color: #050505;	font-family: sans-serif;	font-size: 1.2em;	font-weight: 600;	line-height: 24px;	text-align: center;">
+                    Thank you for reading our E-Newsletter! We were excited to welcome a lot of new patients this summer and continue to accept new patients as we move into the end of the year. As September gets closer we like to focus on getting our families back to school, so here are a couple of tips from the parents on our team on how we prepare at this time of year.
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <!-- Opener : END -->
+            <!-- Double Column : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding-left: 5%; padding-right: 3%; padding-top: 4%; text-align: center">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/e95fc336-1a0f-46e3-8036-35c402986a9e.png?ver=1534434064000" width="100%" alt="alt_text" border="0">
+                </td>
+                <td style="padding-left: 3%; padding-right: 5%; padding-top: 4%; padding-bottom: 4%; text-align: left; font-family: sans-serif; font-size: 0.9em; line-height: 1.2em; color: #454545;">
+                    “I like to take my kids with me to the store to pick out snacks for their lunch, I let them pick only one sugary snack.”
+                </td>
+              </tr>
+            </table>
+            <!-- Double Column : END -->
+
+            <!-- Double Column : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding-left: 5%; padding-right: 3%; padding-top: 4%; text-align: left; font-family: sans-serif; font-size: 0.9em; line-height: 1.2em; color: #454545;">
+                  “My daughter likes to pick out her outfit to match her backpack. We take a trip to the store and have make preparing to go back to school fun.”
+                </td>
+                <td style="padding-left: 3%; padding-right: 5%; padding-top: 4%; padding-bottom: 4%;">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/14afee45-7fc2-4d9a-801e-154c9392db4a.png?ver=1534434064000" width="100%" alt="alt_text" border="0">
+                </td>
+              </tr>
+            </table>
+            <!-- Double Column : END -->
+
+            <!-- Double Column : BEGIN -->
+            <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+              <tr>
+                <td style="padding-left: 5%; padding-right: 3%; padding-top: 4%; padding-bottom: 4%; text-align: center">
+                    <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/07ae99c6-170d-4a1c-97c7-8d8928e030e9.png?ver=1534434064000" width="100%" alt="alt_text" border="0">
+                </td>
+                <td style="padding-left: 3%; padding-right: 5%; padding-top: 4%; padding-bottom: 4%; text-align: left; font-family: sans-serif; font-size: 0.9em; line-height: 1.2em; color: #454545;">
+                    “My kids like to go to the cottage for the last weekend to get some last minute fun in. But as a dentist I always make sure we have a cleaning to send them back to school with a smile.”
+                </td>
+              </tr>
+            </table>
+            <!-- Double Column : END -->
+      <!-- Email Upper Body - END -->
+
+      <!-- Header & Column : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/2f50884a-da49-4474-b1d6-5c484cd5bdca.png?ver=1533830958000" bgcolor="#222222" valign="middle" style="padding-top: 20px; padding-bottom: 20px; padding-left: 4%; padding-right: 4%; text-align: center; background-position: center center !important; background-size: cover !important;">
+              <p style="padding-left: 10%; padding-right: 10%; padding-top: 7%; padding-bottom: 7%; color: #032A84;    font-family: sans-serif;   font-size: 2.4em;	font-weight: 600;	line-height: 36px;	text-align: center; text-decoration: none;">
+                Getting Back Into The School Routine
+              </p>
+          </td>
+          <!-- Fading Column : BEGIN -->
+          <tr>
+              <td align="center" valign="top" class="dropPadding">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                <td bgcolor="#9DC9BA" valign="top" class="stack-column-center">
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-top: 30px; padding-bottom: 30px; padding-left: 60px; padding-right: 60px; color: #454545; font-family: sans-serif;    font-size: 0.9em;    font-weight: 300;   line-height: 1.2em; text-align: center;">
+                        Routines fall away and the nights run long during summer time. Sugary treats come at no shortage either. Make sure you take the extra time to keep dental health a top priority! Brushing regularly and drinking lots of water between meals is a great way to wash away the extra sugar and keep the summer months focused on fun in the sun and avoid extra time in the dental chair.
+                       </td>
+                    </tr>
+                  </table>
+                </td>
+                </tr>
+                </table>
+                <!-- Fading Column : END -->
+              </td>
+            </tr>
+      </table>
+      <!-- Header & Column : END -->
+
+      <!-- Quick Spacer : START -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <tr><td style="padding-top: 40px;"></td></tr> <!-- This is bad manners. Don't do this. -->
+      </table>
+      <!-- Quick Spacer : START -->
+
+      <!-- Header & Column : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+        <tr>
+          <td background="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/6100caff-8795-4744-94bf-d46c34121d30.png?ver=1533830958000" bgcolor="#222222" valign="middle" style="padding-top: 20px; padding-bottom: 20px; padding-left: 4%; padding-right: 4%; text-align: center; background-position: center center !important; background-size: cover !important;">
+            <p style="padding-left: 10%; padding-right: 10%; padding-top: 7%; padding-bottom: 7%; color: #FFFFFF;    font-family: sans-serif;   font-size: 2.4em;	font-weight: 600;	line-height: 36px;	text-align: center; text-decoration: none;">
+                What is the potential of
+                today’s cosmetic dentistry?
+            </p>
+          </td>
+          <!-- Fading Column : BEGIN -->
+          <tr>
+              <td align="center" valign="top" class="dropPadding">
+                <table cellspacing="0" cellpadding="0" border="0" width="100%" padding-bottom: 40px;>
+                  <tr>
+                <td bgcolor="#BCD8F2" valign="top" class="stack-column-center">
+                  <table cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-top: 30px; padding-bottom: 30px; padding-left: 60px; padding-right: 60px; color: #454545; font-family: sans-serif;    font-size: 0.9em;    font-weight: 300;   line-height: 1.2em; text-align: center;">
+                        You may have heard a lot about cosmetic dentistry, and for good reason. Cosmetic dentistry holds the promise of a brighter, more attractive smile. Restoring the beauty of your smile through cosmetic treatments can do wonders for your confidence. If you have any questions or would like to explore the possibilities offered by cosmetic dentistry, speak to us today!                       </td>
+                    </tr>
+                  </table>
+                </td>
+                </tr>
+                </table>
+                <!-- Fading Column : END -->
+              </td>
+            </tr>
+      </table>
+      <!-- Header & Column : END -->
+
+      <!-- Call to Action : BEGIN -->
+      <table align="center" bgcolor="#ffffff" width="700" class="email-container">
+      <tr>
+          <td style="padding-left: 5%; padding-right: 5%; padding-top: 5%; padding-bottom:5%; " class="stack-column-center">
+            <p style="padding-bottom: 1%; color: #454545;	font-family: sans-serif;	font-size: 1.2em;	font-weight: 500;	line-height: 30px;	text-align: center;">
+              Thank you for helping us reach <b>246 Likes!</b>
+              <br>
+              If you haven't already click below to like our page.
+            </p>
+            <!-- Button : Begin -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+              <tr>
+                <td style="height: 42px; width: 172px; background-color: #2A4980; text-align: center; text-decoration:none;">
+                  <a href="https://www.facebook.com/Dr.FerhanaJaleel" target="_blank" style="color: #FFFFFF;    font-family: sans-serif;    font-size: 0.9em;    font-weight: 300;  line-height: 2.4em;  text-align: center;  text-decoration: none;">
+                    <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->Like Us On Facebook!<!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Button : END -->
+            <p style="padding-top: 1%; color: #454545;	font-family: sans-serif;	font-size: 1.2em;	font-weight: 500;	line-height: 1.0em;	text-align: center;">
+              PLEASE SHARE & TELL YOUR FRIENDS!
+            </p>
+            </td>
+          </tr>
+      </table>
+      <!-- Call to Action : END -->
+
+      <!-- Final Body : BEGIN -->
+      <table align="center" bgcolor="#9DC9BA" width="700" class="email-container">
+      <tr>
+        <td style="text-align: center; padding-top: 2%; padding-bottom: 2%; padding-right: 7%; padding-left: 7%;">
+          <p style="color: #3E3E3E; font-family: sans-serif;    font-size: 1.2em;    font-weight: 500;  line-height: 26px; text-align: center;">
+            We know it's been hot - <br>
+            Beat the heat with some fun indoor activities:
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <table align="center" bgcolor="#FFFFFF" width="700" class="email-container">
+      <!-- Image : BEGIN -->
+      <tr>
+        <td bgcolor="#9DC9BA">
+          <img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/09b7086c-b7fd-477b-af6b-68aa88e4bd59.png?ver=1533839178000" style="width: 100%; height: auto; border: 0;">
+        </td>
+      </tr>
+      <!-- Image : END -->
+      <tr>
+        <td style="text-align: center; padding: 20px 6%;">
+          <p style="color: #3E3E3E; font-family: sans-serif; font-size: 1.8em; font-weight: 600;   line-height: 44px; text-align: center;">
+            MAKE YOUR OWN GLITTER SLIME
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: center; padding: 16px 14%;">
+          <p style="color: #454545; font-family: sans-serif;    font-size: 1.2em;    font-weight: 300;   line-height: 22px;  text-align: center;">
+            Here's the fastest, easiest, mess-free slime recipe that you will ever need. The fact that it is glittery is an added bonus!<br>
+            <br>
+            INGREDIENTS<br>
+            <br>
+            1/2 TBSP baking soda<br>
+            1 1/2 TBSP contact lens solution<br>
+            6 fl oz Elmer's Glitter Glue<br>
+            IMPORTANT: Not every contact lens solution is ideal for making slime. Make sure it has boric acid in the ingredients.<br>
+            <br>
+            DIRECTIONS<br>
+            <br>
+            Find a bowl, cup, or plate to mix your slime in.<br>
+            Pour the entire contents of a 6 oz Elmer's Glitter Glue into the blow.<br>
+            Add 1/2 TBSP baking soda to the glue and stir.<br>
+            Add 1 TBSP contact solution to the glue mixture. Mix with a spoon until slime begins to form and gets firm.<br>
+            Once slime becomes too difficult to stir with a spoon, take slime out of the bowl and use your hands to finish combining the ingredients.<br>
+            If slime is too sticky, add 1/4 TBSP contact solution to the mixture. The slime will become significantly less sticky. <br>
+          </p>
+        </td>
+      </tr>
+    </table>
+  <!-- Final Body : END -->
+
+  <!-- Email Body : END -->
+
+  <!-- Email Footer : BEGIN -->
+  <table align="center" bgcolor="#3A3A3A" width="700" class="email-container">
+    <tr>
+      <td style="padding: 2%; width: 100%; font-size: 0.7em; line-height: 13px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #FFFFFF;">
+        <p style="font-size: 1.4em; font-weight: 600; letter-spacing: 1.5px; padding-top: 4%;"> CONTACT US</p>
+        <p style="font-size: 1.2em; font-weight: 300;">
+          Fairlawn Dental Centre </p>
+          <p style="padding: 2%; width: 100%;font-size: 0.9em; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #FFFFFF;">
+          <a href="https://www.google.ca/maps/place/Fairlawn+Dental+Centre/@45.3697073,-75.7730514,17z/data=!3m1!4b1!4m5!3m4!1s0x4055245a1708fce1:0xcc97991b3f784ad6!8m2!3d45.3697073!4d-75.7708627" target="_blank" style="color: #FFFFFF; text-decoration: none;"> 2194 Carling Ave Unit 1 Ottawa, ON K2A 1H3   |   <a href="tel:613-829-6868" style="color: #FFFFFF; text-decoration: none;">613.829.6868</a>   |  <a href="mailto:info@fairlawndentalcentre.ca" target="_blank" style="color: #FFFFFF; text-decoration: none;">info@fairlawndentalcentre.ca</a>
+          <br>
+          <br>
+          <a href="https://www.facebook.com/Dr.FerhanaJaleel/" target="_blank" style="color: #FFFFFF; text-decoration: none;"><img src="https://mlsvc01-prod.s3.amazonaws.com/eada686c101/d1b7a300-e1d2-41e5-b5f3-ba1d0bccb516.png?ver=1532373010000" width="36px" height="36px" alt="alt_text" border="0" style="padding: 4px;"></a>
+          <br>
+        </p>
+      </td>
+    </tr>
+  </table>
+            <!-- Email Footer : END -->
+
+</body>
+</html>
